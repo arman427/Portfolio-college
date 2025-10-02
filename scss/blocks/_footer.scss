@@ -1,0 +1,107 @@
+footer {
+   padding: 60px 0 20px 0;
+   background-color: #111;
+
+}
+
+.whatsapp {
+   padding: 6px;
+   width: 33px;
+   height: 33px;
+   fill: #fff;
+   background-color: #25D366;
+   border-radius: 10px;
+   transition: all 0.4s ease;
+
+   &:hover {
+      background-color: #fff;
+      fill: #25D366;
+   }
+}
+
+.telegram {
+   padding: 6px;
+   width: 33px;
+   height: 33px;
+   fill: #fff;
+   background-color: #039BE5;
+   border-radius: 10px;
+   transition: all 0.4s ease;
+
+   &:hover {
+      background-color: #fff;
+      fill: #039BE5;
+   }
+}
+
+.mail {
+   padding: 6px;
+   width: 33px;
+   height: 33px;
+   background-color: #0e3aff;
+   border-radius: 10px;
+   fill: #fff;
+   transition: all 0.4s ease;
+
+   &:hover {
+      background-color: #fff;
+      fill: #0e3aff;
+   }
+}
+
+.footer-content {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding-bottom: 20px;
+
+   @media only screen and (max-width: 700px) {
+      flex-direction: column;
+      gap: 50px;
+   }
+}
+
+.footer-social {
+   max-width: 500px;
+}
+
+.header-logo {
+   font-size: 30px;
+}
+
+.footer-social__text {
+   margin-top: 0px;
+   font-size: 12px;
+   margin-bottom: 10px;
+}
+
+.social-icons {
+   display: flex;
+   gap: 8px;
+}
+
+.footer-nav__list {
+   display: flex;
+   gap: 30px;
+
+   a {
+      color: rgba(255, 255, 255, 0.6);
+      transition: all 0.3s ease;
+
+      &:hover {
+         color: #fff;
+      }
+   }
+
+   @media only screen and (max-width: 700px) {
+       flex-direction: column;
+       gap: 20px;
+   }
+}
+
+.footer-feedback {
+   padding-top: 20px;
+   border-top: 1px solid rgba(255, 255, 255, 0.1);
+   text-align: center;
+   font-size: 15px;
+}

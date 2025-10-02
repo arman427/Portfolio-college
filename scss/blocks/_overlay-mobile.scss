@@ -1,0 +1,26 @@
+.header-content__mobile {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: #121517;
+   z-index: 99;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   padding: 50px 0;
+   gap: 100px;
+   transition: all 0.3s ease;
+
+   nav {
+      display: block;
+      
+      ul {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         gap: 50px;
+      }
+   }
+}

@@ -1,0 +1,113 @@
+.projects {
+   padding: 200px 0;
+}
+
+.projects-content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
+   position: relative;
+
+   &::before {
+      position: absolute;
+      left: 3%;
+      top: 60%;
+      content: '';
+      width: 300px;
+      height: 300px;
+      border-radius: 300px 0 300px 0;
+      background-color: rgba(255, 255, 255, 0.1);
+
+      @media only screen and (max-width: 1250px) {
+         width: 200px;
+         height: 200px;
+         top: 90%;
+      }
+
+      @media only screen and (max-width: 800px) {
+         left: 12%;
+         top: 45%;
+      }
+      @media only screen and (max-width: 500px) {
+         width: 100px;
+         height: 100px;
+         left: 1%;
+         top: 45%;
+      }
+   }
+
+   &::after {
+      position: absolute;
+      left: 75%;
+      top: 60%;
+      content: '';
+      rotate: 90deg;
+      width: 300px;
+      height: 300px;
+      border-radius: 300px 0 300px 0;
+      background-color: rgba(255, 255, 255, 0.1);
+
+      @media only screen and (max-width: 1250px) {
+         width: 200px;
+         height: 200px;
+         top: 90%;
+      }
+
+      @media only screen and (max-width: 800px) {
+         left: 60%;
+         top: 84%;
+      }
+
+      @media only screen and (max-width: 500px) {
+         width: 100px;
+         height: 100px;
+         left: 73%;
+         top: 94%;
+      }
+   }
+}
+
+.project-card {
+   max-width: 400px;
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+   border-radius: 10px;
+
+
+   &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      opacity: 0.5;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      z-index: -4;
+      transition: all 0.3s ease;
+
+   }
+
+   &:hover::before {
+      opacity: 0.7;
+      background-color: rgba(255, 255, 255, 0.3);
+   }
+
+   p {
+      font-weight: 300;
+      color: var(--color-main);
+   }
+}
+
+.project-img {
+   border-radius: 20px 20px 0 0;
+   transition: all 0.3s ease;
+   width: 100%;
+
+   &:hover {
+      scale: 1.05;
+   }
+}
