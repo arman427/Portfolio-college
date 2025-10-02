@@ -33,6 +33,7 @@ navIcon.addEventListener('click', () => {
 
 burgerLinks.forEach(index => {
    index.addEventListener('click', () => {
+      navIcon.classList.remove('nav-icon--active');
       mobileNav.classList.remove('header-content__mobile');
       html.classList.remove('no-scroll');
    })
