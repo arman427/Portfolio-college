@@ -392,12 +392,6 @@ header {
   width: 30px;
 }
 
-.skills-title {
-  display: flex;
-  justify-content: end;
-  gap: 12px;
-}
-
 .skill-card__text {
   font-size: 13px;
 }
